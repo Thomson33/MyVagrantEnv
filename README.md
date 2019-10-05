@@ -2,9 +2,18 @@
 
 Just a vagrantfile to deploy an environment based on Debian 10 (Buster).
 
+This vagrantfile also install docker and ansible with latest version.
+
 ## How to use it
 
-In writing
+You can use this vagrantfile with my Dockerfile that create a container with nginx that you can find here : https://github.com/Thomson33/MyDockerStarter
+
+0. Install Vagrant :-)
+1. Clone this repo
+2. (Optional) Clone the Dockerfile repo
+3. With you favorite CMD, go to this repo (for mine : `cd /Users/Antoine/Desktop/MyVagrantEnv`)
+4. Init Vagrant : `vagrant init`
+5. Start the VM : `vagrant up`
 
 ## Contributing
 
