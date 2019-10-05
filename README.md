@@ -19,9 +19,11 @@ You can use this vagrantfile with my Dockerfile that create a container with ngi
 ## Some tips
 
 > How to SSH to my Vagrant Box ?
+
 Just use `vagrant ssh`
 
 > How to delete my Vagrant Box ?
+
 Just use `vagrant destroy`
 
 ## Contributing
