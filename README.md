@@ -11,9 +11,10 @@ You can use this vagrantfile with my Dockerfile that create a container with ngi
 0. Install Vagrant :-)
 1. Clone this repo
 2. (Optional) Clone the Dockerfile repo
-3. With you favorite CMD, go to this repo (for mine : `cd /Users/Antoine/Desktop/MyVagrantEnv`)
+3. With you favorite CMD, go to this repo (for me : `cd /Users/Antoine/Desktop/MyVagrantEnv`)
 4. Init Vagrant : `vagrant init`
 5. Start the VM : `vagrant up`
+6. Just have fun !
 
 ## Contributing
 
