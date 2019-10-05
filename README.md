@@ -14,17 +14,17 @@ You can use this vagrantfile with my Dockerfile that create a container with ngi
 3. With you favorite CMD, go to this repo (for me : `cd /Users/Antoine/Desktop/MyVagrantEnv`)
 4. Init Vagrant : `vagrant init`
 5. Start the VM : `vagrant up`
-6. Just have fun !
+6. Have fun !
 
 ## Some tips
 
-> How to SSH to my Vagrant Box ?
+> **How to SSH to my Vagrant Box** ?
 
-Just use `vagrant ssh`
+Just use : `vagrant ssh`
 
-> How to delete my Vagrant Box ?
+> **How to delete my Vagrant Box** ?
 
-Just use `vagrant destroy`
+Just use : `vagrant destroy`
 
 ## Contributing
 
