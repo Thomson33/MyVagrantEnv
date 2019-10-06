@@ -8,13 +8,18 @@ This vagrantfile also install docker and ansible with latest version.
 
 You can use this vagrantfile with my Dockerfile that create a container with nginx that you can find here : https://github.com/Thomson33/MyDockerStarter
 
-0. Install Vagrant :-)
+0. Install Vagrant :-) [https://www.vagrantup.com/downloads.html]
 1. Clone this repo
-2. (Optional) Clone the Dockerfile repo
-3. With you favorite CMD, go to this repo (for me : `cd /Users/Antoine/Desktop/MyVagrantEnv`)
+2. With you favorite CMD, go to this repo (in my case : `cd /Users/Antoine/Desktop/MyVagrantEnv`)
+3. (Optional) Clone the Dockerfile in this repo (in my case : `cd /Users/Antoine/Desktop/MyVagrantEnv && curl https://raw.githubusercontent.com/Thomson33/MyDockerStarter/master/Dockerfile > Dockerfile`)
 4. Init Vagrant : `vagrant init`
 5. Start the VM : `vagrant up`
 6. Have fun !
+7. (Optional) Start the docker's nginx container : 
+    7.1. SSH the VM : `vagrant ssh`
+    7.2. Go to the synced folder : `cd /vagrant`
+    7.3. Build the container : `sudo docker build -t my-container .`
+    7.4. Start the contianer : `sudo docker run -d -p 8080:80 -p 2222:22 my-container`
 
 ## Some tips
 
