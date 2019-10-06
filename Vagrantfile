@@ -26,6 +26,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.hostname = "myenv"
   
+  config.vm.synced_folder ".", "/vagrant", type: "rsync"
+  
   config.vm.network "forwarded_port", guest: 8080, host: 8080
   
   config.vm.network "private_network", ip: "192.168.10.10" 
