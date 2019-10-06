@@ -16,9 +16,13 @@ You can use this vagrantfile with my Dockerfile that create a container with ngi
 5. Start the VM : `vagrant up`
 6. Have fun !
 7. (Optional) Start the docker's nginx container : 
+    
     7.1. SSH the VM : `vagrant ssh`
+    
     7.2. Go to the synced folder : `cd /vagrant`
+    
     7.3. Build the container : `sudo docker build -t my-container .`
+    
     7.4. Start the contianer : `sudo docker run -d -p 8080:80 -p 2222:22 my-container`
 
 ## Some tips
