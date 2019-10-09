@@ -34,20 +34,20 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt-get upgrade -y
-	  # Install standarts packages
-    apt-get install curl wget vim nano ncdu -y
-	  # Install Ansible
-	  echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" >> /etc/apt/sources.list
-	  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+    apt-get upgrade -yq
+	# Install standarts packages
+    apt-get install curl wget vim nano ncdu -yq
+	# Install Ansible
+	echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" >> /etc/apt/sources.list
+	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
     apt-get update
-    apt-get install ansible -y
-	  # Install Docker
-	  apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
-	  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-	  apt-key fingerprint 0EBFCD88
-	  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
-	  apt-get update
-	  apt-get install docker-ce docker-ce-cli containerd.io -y
+    apt-get install ansible -yq
+	# Install Docker
+	apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
+	curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+	apt-key fingerprint 0EBFCD88
+	add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+	apt-get update
+	apt-get install docker-ce docker-ce-cli containerd.io -yq
   SHELL
 end
